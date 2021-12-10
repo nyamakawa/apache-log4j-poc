@@ -2,6 +2,8 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.PropertyConfigurator;
 
+// CVE-2021-44228 test for Log4j 1.2.17
+
 public class log4j {
     private static final Logger logger = Logger.getLogger(log4j.class.getName());
 
